@@ -35,59 +35,94 @@
     a:hover {
       text-decoration: underline;
     }
+    .article-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .article-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: #fff;
+  }
+
+  .article-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .article-content {
+    flex: 1;
+  }
+
+  .article-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1a3f5f;
+  }
+
+  .article-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .article-content a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .article-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .article-image {
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .article-content {
+      padding: 10px 0;
+    }
+  }
   </style>
 </head>
 <body>
+<div class="article-section">
+  <div class="article-card">
+    <img src="img/proplayer.jpg" alt="Proplayer" class="article-image">
+    <div class="article-content">
+      <h2>Apakah Bermain Game Online dan Menjadi Proplayer itu Memiliki Masa Depan Cerah?</h2>
+      <p>
+        Banyak yang bertanya-tanya apakah profesi sebagai proplayer game online bisa menjamin masa depan yang menjanjikan.
+        Di balik keseruan, popularitas dan <a href="#">kaya raya</a>, terdapat tantangan dan peluang nyata yang patut dipertimbangkan secara serius.
+        <br><a href="#">Lihat selengkapnya..</a>
+      </p>
+    </div>
+  </div>
 
-<header>
-  <h1>Saatnya kamu memasuki dunia baru di Ludora, tempat bermain menjadi petualangan yang sesungguhnya!</h1>
-  <p>Nikmati pengalaman bermain game tanpa batas</p>
-</header>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Contoh Menu</title>
-  <style>
-    nav {
-      background-color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: fit-content;
-      margin: 10px auto;
-    }
-
-    nav .menu {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav .menu li a {
-      text-decoration: none;
-      color: black;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
-
-    nav .menu li a.active {
-      border-bottom: 2px solid black;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <ul class="menu">
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">BLOG</a></li>
-      <li><a href="artikel.html">ARTIKEL</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-  </nav>
-</body>
-
+  <div class="article-card">
+    <img src="img/metaverse.jpg" alt="Metaverse" class="article-image">
+    <div class="article-content">
+      <h2>Coba Hasilkan Uang Tambahan Lewat Game Metaverse Web 3.0 - 2025</h2>
+      <p>
+        Manfaatkan peluang dari game metaverse Web 3.0 tahun 2025 sebagai sumber penghasilan tambahan menjanjikan. 
+        Teknologi blockchain membuka pintu menuju pengalaman bermain dan potensi cuan.
+        <br><a href="#">Lihat selengkapnya..</a>
+      </p>
+    </div>
+  </div>
+</div>
 <section>
   <h2>Eksplorasi Seru Dunia Game Mini di Website Kami</h2>
   <p>Website game mini kini menjadi tempat favorit banyak orang untuk bersantai sejenak atau mengisi waktu luang.</p>
