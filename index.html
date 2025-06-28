@@ -44,14 +44,49 @@
   <p>Nikmati pengalaman bermain game tanpa batas</p>
 </header>
 
-<nav>
-  <ul class="menu">
-    <li><a href="#">ABOUT</a></li>
-    <li><a href="#">BLOG</a></li>
-    <li><a href="#">ARTIKEL</a></li>
-    <li><a href="#">CONTACT</a></li>
-  </ul>
-</nav>
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Menu</title>
+  <style>
+    nav {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: fit-content;
+      margin: 10px auto;
+    }
+
+    nav .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav .menu li a {
+      text-decoration: none;
+      color: black;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    nav .menu li a.active {
+      border-bottom: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">ARTIKEL</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+</body>
 
 <section>
   <h2>Eksplorasi Seru Dunia Game Mini di Website Kami</h2>
